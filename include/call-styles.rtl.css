@@ -1,0 +1,14 @@
+
+.footer-links i,.sbc-btn i,.btn-primary-custom i{transform: rotateY(180deg);}
+
+
+
+
+
+
+
+@media (min-width:768px){
+	.stat-item {border-left:1px solid #ffffff33;border-right:none;}
+	.stats .row .col-6:last-child .stat-item{border-left:none;}
+
+}
