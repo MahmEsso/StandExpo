@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1. White layer expands from left to right
     tl.to(element, {
       "--mask-scale": 1,
-      duration: 0.7,
+      duration: 0.4,
       ease: "power2.inOut"
     });
 
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tl.to(element, {
       "--mask-scale": 0,
-      duration: 0.7,
+      duration: 0.4,
       ease: "power2.inOut"
     });
   });
