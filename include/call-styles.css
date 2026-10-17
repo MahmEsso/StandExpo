@@ -350,7 +350,7 @@ footer{background:#1e1e1e;background:radial-gradient(ellipse at top, #000000 0%,
 .footer-links{list-style:none;padding:0}
 .footer-links li{margin-bottom:10px}
 .footer-links a{color:var(--text-muted);font-size:.875rem;text-decoration:none;transition:color .3s;display:flex;align-items:center;gap:8px}
-.footer-links a:hover{color:#FFF;}
+.footer-links a:hover{color:var(--yellow);}
 .footer-links a i{font-size:.6rem;color:var(--yellow)}
 .footer-links.services li:last-child a{color:var(--yellow);font-weight:600}
 
