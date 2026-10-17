@@ -143,6 +143,57 @@ $(document).ready(function(){
 	});
 })();
 
+(function () {
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".mask-revealed").forEach((element) => {
+    const content = element.children;
+
+    gsap.set(element, { "--mask-scale": 0 });
+    gsap.set(content, { opacity: 0 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: element,
+        start: "top 80%",
+        toggleActions: "play none none none"
+      }
+    });
+
+    // 1. White layer expands from left to right
+    tl.to(element, {
+      "--mask-scale": 1,
+      duration: 0.7,
+      ease: "power2.inOut"
+    });
+
+    // 2. Reveal content behind the white layer
+    tl.set(content, { opacity: 1 });
+
+    // 3. Change origin so the layer disappears from left to right
+    tl.set(element, {
+      "--mask-scale": 1,
+      onComplete: () => {
+        element.style.setProperty("--mask-origin", "right center");
+      }
+    });
+
+    tl.to(element, {
+      "--mask-scale": 0,
+      duration: 0.7,
+      ease: "power2.inOut"
+    });
+  });
+});
+
+
+
+})();
+
 $(document).ready(function(){
 	$(".project").hover3d({
 		selector: ".project__card",
