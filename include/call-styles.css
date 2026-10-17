@@ -180,6 +180,8 @@ section{padding:60px 0;position:relative;}
 .about-card-title{color:var(--yellow);font-family:var(--font-bold);z-index:1;/* transform:translate(-8px, 14px); */}
 .div1{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;position:relative;padding:36px 30px;border-radius:16px;overflow:hidden;background-color:var(--card-bg);border:1px solid #333;}
 
+.about-carousel .owl-stage-outer{border-radius:16px;overflow:hidden;}
+.about-carousel img{min-width:100%;min-height:100%;object-fit:cover;}
 
 
 .services{position:relative;padding:100px 0 90px;background-color:#191919;overflow:hidden;transform:translateZ(1px)}

@@ -11,6 +11,16 @@ $(document).ready(function(){
 		autoplayHoverPause: true,
 		responsive: { 0: { items: 2 }, 768: { items: 4 }, 1024: { items: 6 } }
 	});
+	$('.about-carousel').owlCarousel({
+		loop: true,
+		margin: 30,
+		nav: false,
+		dots: true,
+		rtl: true,
+		autoplay: true,
+		autoplayHoverPause: true,
+		responsive: { 0: { items: 1 }, 768: { items: 1 }, 1024: { items: 1 } }
+	});
 });
 
 $(document).ready(function(){
