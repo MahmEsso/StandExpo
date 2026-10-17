@@ -92,7 +92,7 @@
       <div class="col-lg-6 wow fadeInRight">
         <div class="about-content">
           <span class="section-label">من نحن</span>
-          <h2 class="section-title">نحوّل رؤاكم إلى تجارب استثنائية بمعايير تنظيمية عالمية.</h2>
+          <h2 class="section-title text-splitted">نحوّل رؤاكم إلى تجارب استثنائية بمعايير تنظيمية عالمية.</h2>
           <div class="accent-line"></div>
           <p class="section-sub mb-4">من قلب المملكة، انطلقت رحلتنا نحو الرؤى إلى واقع ملموس في عالم الفعاليات والمؤتمرات. بفضل فريقنا الوطني الشغوف وخبراتنا العميقة في التعامل مع الجهات السيادية والحكومية، نصمم تجارب لا تُنسى تتجاوز التوقعات. نحن لا ننظم فعاليات فحسب، بل نصنع أحداثًا استثنائية تدوم في الأذهان، من خلال دمج الابتكار الفني بالدقة التنظيمية، والالتزام المطلق بجودة التنفيذ في كافة مراحل المشروع، من استقطاب المشاركين وحتى اللمسات النهائية للعرض.</p>
           <div class="d-flex gap-4 mt-5">
@@ -103,9 +103,9 @@
       <div class="col-lg-6 wow fadeInLeft">
         <div class="about-grid">
           <div class="div1">
-            <div class="overlay-bg"><img src="images/adv-blur-inner2.png"  alt=""></div>
+            <!-- <div class="overlay-bg"><img src="images/adv-blur-inner2.png"  alt=""></div> -->
             <div class="about-card-title">رسالتنا</div>
-            <div class="about-card-desc mt-5">الريادة في تنظيم المعارض والمؤتمرات بحلول مبتكرة واحترافية على المستوى المحلي والإقليمي</div>
+            <div class="about-card-desc mt-2">الريادة في تنظيم المعارض والمؤتمرات بحلول مبتكرة واحترافية على المستوى المحلي والإقليمي</div>
           </div>
           <div class="div2 bg-styles ratio ratio-1x1" style="background-image:url(images/about-2.jpg);"></div>
         </div>
@@ -124,7 +124,7 @@
     <div class="row">
       <div class="col-lg-6 wow fadeInRight">
         <span class="section-label">ماذا نقدم لعملائنا</span>
-        <h2 class="section-title">خدمات استثنائية لصناعة الفعاليات والمعارض</h2>
+        <h2 class="section-title text-splitted">خدمات استثنائية لصناعة الفعاليات والمعارض</h2>
         <div class="accent-line"></div>
       </div>
       <div class="col-lg-6 d-flex align-items-center wow fadeInRight">
@@ -213,7 +213,7 @@
     <div class="row">
       <div class="col-lg-6 wow fadeInRight">
         <span class="section-label">كيف يستفيد عملاؤنا من خدماتنا؟</span>
-        <h2 class="section-title">الحلول</h2>
+        <h2 class="section-title text-splitted">الحلول</h2>
         <div class="accent-line"></div>
       </div>
       <div class="col-lg-6 d-flex align-items-center wow fadeInRight">
@@ -382,7 +382,7 @@
     <div class="row">
       <div class="col-lg-6 text-start wow fadeInUp">
         <span class="section-label">أعمالنا القريبة</span>
-        <h2 class="section-title">آخر الأحداث</h2>
+        <h2 class="section-title text-splitted">آخر الأحداث</h2>
         <div class="accent-line"></div>
       </div>
       <div class="col-lg-6 text-end wow fadeInUp">
@@ -523,12 +523,49 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
 <script src="include/js/jquery.hover3d.js"></script>
 <script src="include/js/scripts.js"></script>
 
+  <!-- Smooth Scrolling -->
+<script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
+<script>
+  // Initialize Lenis
+  const lenis = new Lenis();
+  // Use requestAnimationFrame to continuously update the scroll
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+</script>
 
+<script>
+document.fonts.ready.then(() => {
+const mySplit = new SplitText(".my-text-element", {
+  type: "lines, words, chars"
+});
+  // SplitText hero title animation
+  document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(SplitText);
+
+    const split = SplitText.create(".text-splitted", {
+      type: "words"
+    });
+
+    gsap.from(split.words, {
+      opacity: 0,
+      y: 20,
+      stagger: 0.05,
+      ease: "back.out(1.7)"
+    });
+  });
+
+// Create your GSAP animations here
+});
+</script>
 
 
 </body>
