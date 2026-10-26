@@ -117,11 +117,10 @@ $(document).ready(function(){
 
 
 
-(function () {
+/* (function () {
 	const cards = gsap.utils.toArray(".c-card");
 	const lastCardIndex = cards.length - 1;
 
-	// Crear el ScrollTrigger para la primera y última tarjeta
 	const firstCardST = ScrollTrigger.create({
 		trigger: cards[1],
 		start: "center center"
@@ -151,7 +150,102 @@ $(document).ready(function(){
 			toggleActions: "restart none none reverse"
 		});
 	});
+})(); */
+
+
+(function () {
+	var slider = document.querySelector('.l-cards');
+	var slides = Array.prototype.slice.call(slider.querySelectorAll('.c-card'));
+	var current = 0;
+	var busy = false;
+	var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+	function go(target, direction) {
+	if (busy || target === current) return;
+	busy = true;
+
+	var outgoing = slides[current];
+	var incoming = slides[target];
+
+	// direction: 1 = next, -1 = prev
+	slider.classList.toggle('is-prev', direction < 0);
+	void slider.offsetWidth; // flush styles so the incoming image starts from the right side
+
+	outgoing.classList.remove('is-active');
+	outgoing.classList.add('is-leaving');
+	incoming.classList.add('is-active');
+
+	slides.forEach(function (s, i) {
+		s.setAttribute('aria-hidden', i === target ? 'false' : 'true');
+	});
+
+	setTimeout(function () {
+		outgoing.classList.remove('is-leaving');
+		current = target;
+		busy = false;
+	}, reduceMotion.matches ? 50 : 1100);
+	}
+
+	function next() { go((current + 1) % slides.length, 1); }
+	function prev() { go((current - 1 + slides.length) % slides.length, -1); }
+
+	// ---------- Autoplay ----------
+	var AUTOPLAY_DELAY = 5000; // ms between slides
+	var timer = null;
+
+	function stop() {
+	clearInterval(timer);
+	timer = null;
+	}
+
+	function start() {
+	stop();
+	if (reduceMotion.matches) return;
+	timer = setInterval(next, AUTOPLAY_DELAY);
+	}
+
+	// Pause while the user hovers or focuses inside the slider
+	slider.addEventListener('mouseenter', stop);
+	slider.addEventListener('mouseleave', start);
+	slider.addEventListener('focusin', stop);
+	slider.addEventListener('focusout', start);
+
+	// Pause when the browser tab is hidden
+	document.addEventListener('visibilitychange', function () {
+	document.hidden ? stop() : start();
+	});
+
+	// Manual navigation restarts the timer so it never fires right after a click
+	slider.querySelector('.js-slider-next').addEventListener('click', function () { next(); start(); });
+	slider.querySelector('.js-slider-prev').addEventListener('click', function () { prev(); start(); });
+
+	// Swipe support (RTL: swipe right = next)
+	var startX = null;
+	slider.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+	slider.addEventListener('touchend', function (e) {
+	if (startX === null) return;
+	var dx = e.changedTouches[0].clientX - startX;
+	if (Math.abs(dx) > 50) { dx > 0 ? next() : prev(); start(); }
+	startX = null;
+	}, { passive: true });
+
+	slides.forEach(function (s, i) {
+	s.setAttribute('role', 'group');
+	s.setAttribute('aria-roledescription', 'slide');
+	s.setAttribute('aria-label', (i + 1) + ' / ' + slides.length);
+	s.setAttribute('aria-hidden', i === 0 ? 'false' : 'true');
+	});
+
+	start();
 })();
+
+
+
+
+
+
+
+
 
 (function () {
 
