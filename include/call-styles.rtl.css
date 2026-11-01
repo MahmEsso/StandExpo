@@ -1,7 +1,9 @@
 
 .footer-links i,.sbc-btn i,.btn-primary-custom i{transform: rotateY(180deg);}
 
-.btn-primary-custom,.btn-outline-custom,.section-label,.stat-label,.news-tag,.footer-title{letter-spacing:normal;}
+.btn-primary-custom,.btn-outline-custom,.section-label,.stat-label,.news-tag,.footer-title{letter-spacing:normal;}.btn-case-study:hover {transform: translateX(4px);}
+.work-metric-box {border-right: 3px solid var(--yellow); border-left: none;}
+
 
 
 
