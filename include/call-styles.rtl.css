@@ -12,3 +12,6 @@
 	.stats .row .col-6:last-child .stat-item{border-left:none;}
 
 }
+
+.btn-case-study:hover {transform: translateX(4px);}
+.work-metric-box {border-right: 3px solid var(--yellow); border-left: none;}

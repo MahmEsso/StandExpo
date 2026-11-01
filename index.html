@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>StandExpo</title>
+	<title>StandExpo | ستاند اكسبو لصناعة المعارض والفعاليات</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -34,312 +34,481 @@
 <!-- Fixed Premium Multi-Page Navigation Architecture -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+    <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="StandExpo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#enterpriseNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="enterpriseNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">الشركة</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#home">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="servicesDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             خدماتنا
           </a>
           <ul class="dropdown-menu" aria-labelledby="servicesDrop">
-            <li><a class="dropdown-item" href="#">إدارة الفعاليات</a></li>
-            <li><a class="dropdown-item" href="#">تنظيم المعارض</a></li>
-            <li><a class="dropdown-item" href="#">تنظيم المؤتمرات</a></li>
-            <li><a class="dropdown-item" href="#">تنظيم الندوات</a></li>
+            <li><a class="dropdown-item" href="#services-manufacturing">الإنتاج والتصنيع</a></li>
+            <li><a class="dropdown-item" href="#services-management">التنظيم والإدارة</a></li>
+            <li><a class="dropdown-item" href="#pipeline">من المصنع إلى المعرض</a></li>
           </ul>
         </li>
+        <li class="nav-item"><a class="nav-link" href="#solutions">الممكنات</a></li>
+        <li class="nav-item"><a class="nav-link" href="#why-us">لماذا ستاند اكسبو</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">أعمال مختارة</a></li>
+        <li class="nav-item"><a class="nav-link" href="#clients">جهات وثقت بنا</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="solutionsDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            الحلول
+          <a class="nav-link dropdown-toggle" href="#join-us" id="joinDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            انضم إلينا
           </a>
-          <ul class="dropdown-menu" aria-labelledby="solutionsDrop">
-            <li><a class="dropdown-item" href="#">الحلول والممكنات التقنية</a></li>
-            <li><a class="dropdown-item" href="#">الحلول والخدمات اللوجستية</a></li>
-            <li><a class="dropdown-item" href="#">أنظمة الصوت</a></li>
-            <li><a class="dropdown-item" href="#">أنظمة الشاشات</a></li>
-            <li><a class="dropdown-item" href="#">أنظمة الإضاءة</a></li>
+          <ul class="dropdown-menu" aria-labelledby="joinDrop">
+            <li><a class="dropdown-item" href="#join-us">انضم لفريقنا</a></li>
+            <li><a class="dropdown-item" href="#join-us">سجّل كمورد معتمد</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#">أعمالنا</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">عملاؤنا</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">الأحداث</a></li>
-        <li class="nav-item ms-lg-3"><a class="nav-btn" href="#">اتصل بنا</a></li>
+        <li class="nav-item ms-lg-3"><a class="nav-btn" href="#">اطلب عرض سعر</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- ══════════ HERO ══════════ -->
+<!-- ══════════ 1. الواجهة الافتتاحية (فيديو من المصنع والفعاليات) ══════════ -->
 <section class="hero" id="home">
-  <video autoplay="" muted="" loop="" playsinline="" class="absolute inset-0 h-screen w-full object-cover mask-b-from-20% mask-b-to-80%" preload="auto" style="aspect-ratio:240/151">
+  <video autoplay="" muted="" loop="" playsinline="" class="absolute inset-0 h-screen w-full object-cover" preload="auto">
     <source src="images/hero.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <div class="hero-overlay-dark"></div>
+  <div class="container hero-content-wrap">
+    <div class="row min-vh-100 align-items-center">
+      <div class="col-lg-9 col-xl-8">
+        <span class="hero-badge wow fadeInDown"><i class="fa-solid fa-sparkles"></i> رواد صناعة المعارض والفعاليات في المملكة</span>
+        <h1 class="hero-title text-splitted mt-3">نصمّم ونصنّع ونُنظّم،<br><span class="text-white">من الفكرة حتى آخر زائر.</span></h1>
+        <p class="hero-desc mt-4 wow fadeInUp" data-wow-delay="0.2s">أجنحة وديكورات ومسارح تُصنع في ورشنا، وفعاليات تُدار بفريقنا، للجهات الحكومية والشركات الكبرى.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4 pt-2 wow fadeInUp" data-wow-delay="0.4s">
+          <a href="#" class="btn-primary-custom">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <span>اطلب عرض سعر</span>
+          </a>
+          <a href="#portfolio" class="btn-outline-custom">
+            <i class="fa-solid fa-eye me-2"></i>
+            <span>شاهد أعمالنا</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="hero-scroll">
     <div class="scroll-line"></div>
   </div>
 </section>
 
+<!-- ══════════ 2. شريط الأرقام (نقل للأعلى) ══════════ -->
+<section class="stats" id="stats">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.0s">
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="500">0</span><span class="plus">+</span></div>
+          <div class="stat-label">جناح صمّمناه وصنّعناه</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="120">0</span><span class="plus">+</span></div>
+          <div class="stat-label">فعالية ناجحة</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="85">0</span><span class="plus">+</span></div>
+          <div class="stat-label">عميل وشريك نجاح</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="4500">0</span><span class="plus"> م²</span></div>
+          <div class="stat-label">مساحة ورش الإنتاج</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 3. خدماتنا (مجموعتان مع زر تفاصيل الخدمة لكل بطاقة) ══════════ -->
+<section class="services bg-styles" id="services">
+  <div class="services-pattern-grid"></div>
+  <div class="container position-relative">
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <span class="section-label">ماذا نقدم لعملائنا</span>
+        <h2 class="section-title text-splitted">خدماتنا المتكاملة</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center wow fadeInRight">
+        <div class="mask-revealed">
+          <p class="section-sub">منظومة شاملة تجمع بين قدرات التصنيع والإنتاج الداخلي في ورشنا الخاصة، والاحترافية التنظيمية وإدارة الفعاليات الكبرى بمعايير عالمية استثنائية.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- المجموعة الأولى: الإنتاج والتصنيع -->
+    <div id="services-manufacturing" class="service-group-section mb-5">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+        <div>
+          <span class="service-group-badge"><i class="fa-solid fa-industry"></i> التصنيع الداخلي</span>
+          <h3 class="service-group-title mt-2">الإنتاج والتصنيع</h3>
+          <p class="service-group-desc">تصنيع وتجهيز متكامل في ورشنا الخاصة باستخدام أرقى الخامات وأحدث التقنيات الهندسية.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-box wow fadeInUp" data-cursor-text="تفاصيل الخدمة">
+            <div class="project-list">
+              <div class="project">
+                <div class="project__card bg-styles" style="background-image:url(images/service-stands.jpg)">
+                  <div class="project__detail">
+                    <h3 class="project__title">تصنيع أجنحة المعارض</h3>
+                    <div class="project__category">
+                      <span class="service-cta-btn">تفاصيل الخدمة <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.1s" data-cursor-text="تفاصيل الخدمة">
+            <div class="project-list">
+              <div class="project">
+                <div class="project__card bg-styles" style="background-image:url(images/solution1.jpg)">
+                  <div class="project__detail">
+                    <h3 class="project__title">تصنيع الديكورات والمسارح</h3>
+                    <div class="project__category">
+                      <span class="service-cta-btn">تفاصيل الخدمة <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="تفاصيل الخدمة">
+            <div class="project-list">
+              <div class="project">
+                <div class="project__card bg-styles" style="background-image:url(images/solution5.jpg)">
+                  <div class="project__detail">
+                    <h3 class="project__title">التجهيزات الخشبية والمعدنية</h3>
+                    <div class="project__category">
+                      <span class="service-cta-btn">تفاصيل الخدمة <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.3s" data-cursor-text="تفاصيل الخدمة">
+            <div class="project-list">
+              <div class="project">
+                <div class="project__card bg-styles" style="background-image:url(images/solution3.jpg)">
+                  <div class="project__detail">
+                    <h3 class="project__title">الطباعة الرقمية واللافتات</h3>
+                    <div class="project__category">
+                      <span class="service-cta-btn">تفاصيل الخدمة <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- المجموعة الثانية: التنظيم والإدارة -->
+    <div id="services-management" class="service-group-section mt-5 pt-4">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+        <div>
+          <span class="service-group-badge"><i class="fa-solid fa-calendar-check"></i> الخبرة الميدانية</span>
+          <h3 class="service-group-title mt-2">التنظيم والإدارة</h3>
+          <p class="service-group-desc">إدارة احترافية وتشغيل ميداني بمعايير تنظيمية دقيقة تواكب متطلبات كبرى الأحداث والجهات الحكومية.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-box wow fadeInUp" data-cursor-text="تفاصيل الخدمة">
+            <div class="project-list">
+              <div class="project">
+                <div class="project__card bg-styles" style="background-image:url(images/service-events.jpg)">
+                  <div class="project__detail">
+                    <h3 class="project__title">إدارة الفعاليات والمهرجانات</h3>
+                    <div class="project__category">
+                      <span class="service-cta-btn">تفاصيل الخدمة <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.1s" data-cursor-text="تفاصيل الخدمة">
+            <div class="project-list">
+              <div class="project">
+                <div class="project__card bg-styles" style="background-image:url(images/event1.jpg)">
+                  <div class="project__detail">
+                    <h3 class="project__title">تنظيم المعارض الدولية</h3>
+                    <div class="project__category">
+                      <span class="service-cta-btn">تفاصيل الخدمة <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="تفاصيل الخدمة">
+            <div class="project-list">
+              <div class="project">
+                <div class="project__card bg-styles" style="background-image:url(images/service-conferences.jpg)">
+                  <div class="project__detail">
+                    <h3 class="project__title">تنظيم المؤتمرات والندوات</h3>
+                    <div class="project__category">
+                      <span class="service-cta-btn">تفاصيل الخدمة <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.3s" data-cursor-text="تفاصيل الخدمة">
+            <div class="project-list">
+              <div class="project">
+                <div class="project__card bg-styles" style="background-image:url(images/service-avtech.jpg)">
+                  <div class="project__detail">
+                    <h3 class="project__title">التجهيزات التقنية والتشغيل</h3>
+                    <div class="project__category">
+                      <span class="service-cta-btn">تفاصيل الخدمة <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 4. من المصنع إلى المعرض (جديد - شريط مرئي بـ5 خطوات) ══════════ -->
+<section class="pipeline-section" id="pipeline">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <span class="section-label">دورة العمل المتكاملة</span>
+        <h2 class="section-title text-splitted">من المصنع إلى المعرض</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="col-lg-6">
+        <p class="section-sub">رحلة إنتاجية متكاملة نتحكم في كافة مراحلها لضمان مطابقة أدق المواصفات الهندسية والتسليم المتقن قبل موعد انطلاق الفعالية.</p>
+      </div>
+    </div>
+
+    <div class="pipeline-grid">
+      <!-- الخطوة 1 -->
+      <div class="pipeline-step wow fadeInUp" data-wow-delay="0.0s">
+        <div class="step-header">
+          <span class="step-num">01</span>
+          <div class="step-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+        </div>
+        <div class="step-img-box">
+          <img src="images/solution1.jpg" alt="التصميم ثلاثي الأبعاد">
+        </div>
+        <h4 class="step-title">التصميم ثلاثي الأبعاد</h4>
+        <p class="step-desc">تحويل الرؤية إلى نماذج معمارية واقعية وخطط تنفيذية تحاكي كل زاوية بدقة متناهية قبل التصنيع.</p>
+      </div>
+
+      <!-- الخطوة 2 -->
+      <div class="pipeline-step wow fadeInUp" data-wow-delay="0.1s">
+        <div class="step-header">
+          <span class="step-num">02</span>
+          <div class="step-icon"><i class="fa-solid fa-hammer"></i></div>
+        </div>
+        <div class="step-img-box">
+          <img src="images/about-2.jpg" alt="التصنيع في ورشنا">
+        </div>
+        <h4 class="step-title">التصنيع في ورشنا</h4>
+        <p class="step-desc">تصنيع الأجنحة والديكورات بأيدي فنيين محترفين وأحدث آلات النجارة، التشكيل، والدهانات الدقيقة.</p>
+      </div>
+
+      <!-- الخطوة 3 -->
+      <div class="pipeline-step wow fadeInUp" data-wow-delay="0.2s">
+        <div class="step-header">
+          <span class="step-num">03</span>
+          <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        </div>
+        <div class="step-img-box">
+          <img src="images/solution2.jpg" alt="النقل">
+        </div>
+        <h4 class="step-title">النقل</h4>
+        <p class="step-desc">أسطول لوجستي مجهز لنقل القطع والمعدات الحساسة بأمان تام وجدولة زمنية محكمة لموقع الحدث.</p>
+      </div>
+
+      <!-- الخطوة 4 -->
+      <div class="pipeline-step wow fadeInUp" data-wow-delay="0.3s">
+        <div class="step-header">
+          <span class="step-num">04</span>
+          <div class="step-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        </div>
+        <div class="step-img-box">
+          <img src="images/about-1.jpg" alt="التركيب">
+        </div>
+        <h4 class="step-title">التركيب</h4>
+        <p class="step-desc">بناء ميداني سريع ودقيق بواسطة فرق تركيب خبيرة مع فحص شامل للإضاءة والشاشات وكافة الأنظمة.</p>
+      </div>
+
+      <!-- الخطوة 5 -->
+      <div class="pipeline-step wow fadeInUp" data-wow-delay="0.4s">
+        <div class="step-header">
+          <span class="step-num">05</span>
+          <div class="step-icon"><i class="fa-solid fa-sliders"></i></div>
+        </div>
+        <div class="step-img-box">
+          <img src="images/event2.jpg" alt="التشغيل والفك">
+        </div>
+        <h4 class="step-title">التشغيل والفك</h4>
+        <p class="step-desc">إشراف فني طوال أيام الفعالية، يعقبه فك سريع وآمن وإعادة تهيئة الموقع وفق أرقى المعايير.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 pt-3 wow fadeInUp" data-wow-delay="0.5s">
+      <a href="#about" class="btn-primary-custom" data-cursor-text="مرافقنا">
+        <i class="fa-solid fa-arrow-right-long"></i>
+        <span>تعرّف على مرافق الإنتاج</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 5. من نحن (مختصر إلى 3 أسطر مع النص المصحح) ══════════ -->
 <section class="overview" id="about">
   <div class="logo-overlay"><img src="images/logo-icon.svg" alt=""></div>
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-lg-6">
         <div class="about-content">
           <span class="section-label">من نحن</span>
-          <h2 class="section-title text-splitted">نحوّل رؤاكم إلى تجارب استثنائية بمعايير تنظيمية عالمية.</h2>
+          <h2 class="section-title text-splitted">انطلقت رحلتنا لتحويل الرؤى إلى واقع ملموس.</h2>
           <div class="accent-line"></div>
           <div class="mask-revealed">
-            <p class="section-sub mb-4">من قلب المملكة، انطلقت رحلتنا نحو الرؤى إلى واقع ملموس في عالم الفعاليات والمؤتمرات. بفضل فريقنا الوطني الشغوف وخبراتنا العميقة في التعامل مع الجهات السيادية والحكومية، نصمم تجارب لا تُنسى تتجاوز التوقعات. نحن لا ننظم فعاليات فحسب، بل نصنع أحداثًا استثنائية تدوم في الأذهان، من خلال دمج الابتكار الفني بالدقة التنظيمية، والالتزام المطلق بجودة التنفيذ في كافة مراحل المشروع، من استقطاب المشاركين وحتى اللمسات النهائية للعرض.</p>
+            <p class="section-sub mb-4">من قلب المملكة، انطلقت رحلتنا لتحويل الرؤى إلى واقع ملموس في عالم المعارض والفعاليات الكبرى.<br>
+نجمع بين التصنيع المتقدم في ورشنا الخاصة والدقة التنظيمية الشاملة لنصنع أحداثاً استثنائية تدوم في الأذهان.<br>
+فريق وطني خبير وشغوف يلتزم بأعلى معايير الجودة التنظيمية لتلبية تطلعات الجهات الحكومية والشركات الكبرى.</p>
           </div>
-          <div class="d-flex gap-4 mt-5">
-            <a href="#" class="btn-primary-custom" data-cursor-text="قراءة المزيد"><i class="fa-solid fa-arrow-right-long"></i></a>
+          <div class="d-flex gap-4 mt-4">
+            <a href="#why-us" class="btn-primary-custom" data-cursor-text="تعرّف علينا">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <span>تعرّف علينا</span>
+            </a>
           </div>
         </div>
       </div>
       <div class="col-lg-6 wow fadeInLeft">
         <div class="about-grid">
           <div class="div1">
-            <!-- <div class="overlay-bg"><img src="images/adv-blur-inner2.png"  alt=""></div> -->
             <div class="about-card-title">رسالتنا</div>
-            <div class="about-card-desc mt-2">الريادة في تنظيم المعارض والمؤتمرات بحلول مبتكرة واحترافية على المستوى المحلي والإقليمي</div>
+            <div class="about-card-desc mt-2">الريادة في صناعة المعارض والمؤتمرات بحلول تصنيع وتنظيم مبتكرة واحترافية على المستوى المحلي والإقليمي.</div>
           </div>
           <div class="div2">
             <div class="about-carousel owl-carousel owl-theme">
-              <div class="item"><img src="images/about-1.jpg" alt=""></div>
-              <div class="item"><img src="images/about-2.jpg" alt=""></div>
-              <div class="item"><img src="images/about-3.jpg" alt=""></div>
+              <div class="item"><img src="images/about-1.jpg" alt="StandExpo"></div>
+              <div class="item"><img src="images/about-2.jpg" alt="StandExpo"></div>
+              <div class="item"><img src="images/about-3.jpg" alt="StandExpo"></div>
             </div>
           </div>
-        </div>
-        <!-- <div class="about-grid-new">
-          
-        </div> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="services bg-styles" id="services">
-  <!-- <div class="services-glow-bg"><img src="images/services-glow.webp" alt="Glow Overlay"></div> -->
-  <div class="services-pattern-grid"></div>
-  <div class="container position-relative">
-    <div class="row">
-      <div class="col-lg-6">
-        <span class="section-label">ماذا نقدم لعملائنا</span>
-        <h2 class="section-title text-splitted">خدمات استثنائية لصناعة الفعاليات والمعارض</h2>
-        <div class="accent-line"></div>
-      </div>
-      <div class="col-lg-6 d-flex align-items-center wow fadeInRight">
-        <div class="mask-revealed">
-          <p class="section-sub">نبتكر تجارب تفاعلية متكاملة تجمع بين الإبداع المعماري وأحدث التقنيات البصرية والصوتية، لنصنع لعلامتكم التجارية حضوراً مهيباً لا يُنسى في كل حدث ومؤتمر.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <a href="#" class="service-box wow fadeInUp" data-cursor-text="قراءة التفاصيل">
-          <div class="project-list">
-            <div class="project">
-              <div class="project__card bg-styles" style="background-image:url(images/service-events.jpg)">
-                <div class="project__detail">
-                  <h2 class="project__title">إدارة الفعاليات</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.2s" data-cursor-text="قراءة التفاصيل">
-          <div class="project-list">
-            <div class="project">
-              <div class="project__card bg-styles" style="background-image:url(images/service-stands.jpg)">
-                <div class="project__detail">
-                  <h2 class="project__title">تنظيم المعارض</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.4s" data-cursor-text="قراءة التفاصيل">
-          <div class="project-list">
-            <div class="project">
-              <div class="project__card bg-styles" style="background-image:url(images/service-conferences.jpg)">
-                <div class="project__detail">
-                  <h2 class="project__title">تنظيم الندوات</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <a href="#" class="service-box wow fadeInUp" data-wow-delay="0.6s" data-cursor-text="قراءة التفاصيل">
-          <div class="project-list">
-            <div class="project">
-              <div class="project__card bg-styles" style="background-image:url(images/service-avtech.jpg)">
-                <div class="project__detail">
-                  <h2 class="project__title">تنظيم المؤتمرات</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-lg-2 col-md-3 d-flex flex-column justify-content-start  wow fadeInUp">
-        <div class="clients-heading">عملاؤنا</div>
-        <div class="accent-line"></div>
-      </div>
-      <div class="col-lg-10 col-md-9">
-        <div class="clients-carousel owl-carousel owl-theme wow fadeInDown">
-          <div class="client-box"><img src="images/cl1.png" alt=""></div>
-          <div class="client-box"><img src="images/cl2.png" alt=""></div>
-          <div class="client-box"><img src="images/cl3.png" alt=""></div>
-          <div class="client-box"><img src="images/cl4.png" alt=""></div>
-          <div class="client-box"><img src="images/cl5.png" alt=""></div>
-          <div class="client-box"><img src="images/cl6.png" alt=""></div>
-          <div class="client-box"><img src="images/cl7.png" alt=""></div>
-          <div class="client-box"><img src="images/cl8.png" alt=""></div>
-          <div class="client-box"><img src="images/cl9.png" alt=""></div>
-          <div class="client-box"><img src="images/cl10.png" alt=""></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="solutions">
+<!-- ══════════ 6. الممكنات (3 بطاقات: التقنية، اللوجستية، التسويقية) ══════════ -->
+<section class="solutions" id="solutions">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <span class="section-label wow fadeInRight">كيف يستفيد عملاؤنا من خدماتنا؟</span>
-        <h2 class="section-title text-splitted">الحلول</h2>
+        <span class="section-label wow fadeInRight">قدراتنا وحلولنا المتطورة</span>
+        <h2 class="section-title text-splitted">الممكنات</h2>
         <div class="accent-line"></div>
       </div>
       <div class="col-lg-6 d-flex align-items-center">
         <div class="mask-revealed">
-          <p class="section-sub">سواء كانت مؤسسة حكومية، شركة كبرى، مؤسسة تعليمية، أو جهة صحية، نقدم حلولاً مخصصة تضمن نجاح فعاليتكم وتحقيق أهدافكم الاستراتيجية.</p>
+          <p class="section-sub">نوفر لعملائنا ثلاث ركائز تمكينية رئيسية تضمن تنفيذ فعاليات ضخمة ومعارض رائدة بأعلى كفاءة تشغيلية وتقنية وتسويقية.</p>
         </div>
       </div>
     </div>
-    <!-- <div class="row">
-      <div class="col-12">
-        <div class="solutions-wrapper">
-          <div class="solution-box solution-1 wow fadeInUp" data-wow-delay="0.1s">
-            <a href="#"><h3 class="solution-title">الحلول والممكنات التقنية</h3></a>
-            <a href="#" class="solution-btn">
-              <img src="images/solution1.jpg" class="w-100" loading="lazy" alt="">
-            </a>
-          </div>
-          <div class="solution-box solution-2 wow fadeInUp" data-wow-delay="0.2s">
-            <a href="#"><h3 class="solution-title">الحلول والخدمات اللوجستية</h3></a>
-            <a href="#" class="solution-btn">
-              <img src="images/solution2.jpg" class="w-100" loading="lazy" alt="">
-            </a>
-          </div>
-          <div class="solution-box solution-3 wow fadeInUp" data-wow-delay="0.3s">
-            <a href="#"><h3 class="solution-title">أنظمة الصوت</h3></a>
-            <a href="#" class="solution-btn">
-              <img src="images/solution3.jpg" class="w-100" loading="lazy" alt="">
-            </a>
-          </div>
-          <div class="solution-box solution-4 wow fadeInUp" data-wow-delay="0.4s">
-            <a href="#"><h3 class="solution-title">أنظمة الشاشات</h3></a>
-            <a href="#" class="solution-btn">
-              <img src="images/solution4.jpg" class="w-100" loading="lazy" alt="">
-            </a>
-          </div>
-          <div class="solution-box solution-5 wow fadeInUp" data-wow-delay="0.5s">
-            <a href="#"><h3 class="solution-title">أنظمة الإضاءة</h3></a>
-            <a href="#" class="solution-btn">
-              <img src="images/solution5.jpg" class="w-100" loading="lazy" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <div class="row">
       <div class="col-12">
-          <div class="l-cards" role="region" aria-roledescription="carousel" aria-label="الحلول">
- 
+        <div class="l-cards" role="region" aria-roledescription="carousel" aria-label="الممكنات">
+          <!-- Slide 1: الممكنات التقنية -->
           <div class="c-card is-active">
             <div class="solution-card-content">
               <div class="solution-card-txt">
                 <h3>الحلول والممكنات التقنية</h3>
                 <div class="accent-line"></div>
-                <p class="solution-desc">نقدم خدماتنا التسويقية الممكنة بأفكار إبداعية في مجال إدارة الأحداث ووسائل الإعلام الرقمي، حيث ننفذ الاستراتيجية الملائمة للحدث عبر القنوات الفعالة وذلك من خلال دراسات السوق والتوجهات والممكنات التي نقوم بتوفيرها.</p>
-                <!-- <div class="d-flex gap-4 mt-3">
-                  <a href="#" class="btn-primary-custom" data-cursor-text="قراءة المزيد"><i class="fa-solid fa-arrow-right-long"></i></a>
-                </div> -->
+                <p class="solution-desc">أحدث منظومات هندسة الصوت الاحترافية، شاشات العرض التفاعلية والـ LED الضخمة، وأنظمة الإضاءة المسرحية، وتقنيات الواقع الافتراضي والبث المباشر التي تحوّل المساحات إلى تجارب حسية وبصرية استثنائية.</p>
+                <div class="d-flex gap-4 mt-4">
+                  <a href="#" class="btn-primary-custom" data-cursor-text="استشارة مجانية">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <span>استشارة مجانية</span>
+                  </a>
+                </div>
               </div>
-              <div class="solution-card-img"><img src="images/solution1.jpg" class="object-fit-cover" alt=""></div>
+              <div class="solution-card-img"><img src="images/solution1.jpg" class="object-fit-cover" alt="الممكنات التقنية"></div>
             </div>
           </div>
       
+          <!-- Slide 2: الممكنات اللوجستية -->
           <div class="c-card">
             <div class="solution-card-content">
               <div class="solution-card-txt">
                 <h3>الحلول والخدمات اللوجستية</h3>
                 <div class="accent-line"></div>
-                <p class="solution-desc">نقدم خدماتنا التسويقية الممكنة بأفكار إبداعية في مجال إدارة الأحداث ووسائل الإعلام الرقمي، حيث ننفذ الاستراتيجية الملائمة للحدث عبر القنوات الفعالة وذلك من خلال دراسات السوق والتوجهات والممكنات التي نقوم بتوفيرها.</p>
-                <!-- <div class="d-flex gap-4 mt-3">
-                  <a href="#" class="btn-primary-custom" data-cursor-text="قراءة المزيد"><i class="fa-solid fa-arrow-right-long"></i></a>
-                </div> -->
+                <p class="solution-desc">منظومة إمداد ونقل متكاملة تشمل أساطيل نقل مجهزة، مستودعات تخزين مركزية، إدارة وتفويج الحشود، وتوفير كافة التجهيزات الميدانية ومولدات الطاقة وفق أعلى معايير السلامة المهنية.</p>
+                <div class="d-flex gap-4 mt-4">
+                  <a href="#" class="btn-primary-custom" data-cursor-text="استشارة مجانية">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <span>استشارة مجانية</span>
+                  </a>
+                </div>
               </div>
-              <div class="solution-card-img"><img src="images/solution2.jpg" class="object-fit-cover" alt=""></div>
+              <div class="solution-card-img"><img src="images/solution2.jpg" class="object-fit-cover" alt="الممكنات اللوجستية"></div>
             </div>
           </div>
       
+          <!-- Slide 3: الممكنات التسويقية -->
           <div class="c-card">
             <div class="solution-card-content">
               <div class="solution-card-txt">
-                <h3>أنظمة الصوت</h3>
+                <h3>الحلول والممكنات التسويقية</h3>
                 <div class="accent-line"></div>
-                <p class="solution-desc">نقدم خدماتنا التسويقية الممكنة بأفكار إبداعية في مجال إدارة الأحداث ووسائل الإعلام الرقمي، حيث ننفذ الاستراتيجية الملائمة للحدث عبر القنوات الفعالة وذلك من خلال دراسات السوق والتوجهات والممكنات التي نقوم بتوفيرها.</p>
-                <!-- <div class="d-flex gap-4 mt-3">
-                  <a href="#" class="btn-primary-custom" data-cursor-text="قراءة المزيد"><i class="fa-solid fa-arrow-right-long"></i></a>
-                </div> -->
+                <p class="solution-desc">نقدم خدماتنا التسويقية الممكنة بأفكار إبداعية في مجال إدارة الأحداث ووسائل الإعلام الرقمي، حيث ننفذ الاستراتيجية الملائمة للحدث عبر القنوات الفعالة وصناعة المحتوى المرئي لجذب الجمهور وبناء أثر مستدام.</p>
+                <div class="d-flex gap-4 mt-4">
+                  <a href="#" class="btn-primary-custom" data-cursor-text="استشارة مجانية">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <span>استشارة مجانية</span>
+                  </a>
+                </div>
               </div>
-              <div class="solution-card-img"><img src="images/solution3.jpg" class="object-fit-cover" alt=""></div>
-            </div>
-          </div>
-      
-          <div class="c-card">
-            <div class="solution-card-content">
-              <div class="solution-card-txt">
-                <h3>أنظمة الشاشات</h3>
-                <div class="accent-line"></div>
-                <p class="solution-desc">نقدم خدماتنا التسويقية الممكنة بأفكار إبداعية في مجال إدارة الأحداث ووسائل الإعلام الرقمي، حيث ننفذ الاستراتيجية الملائمة للحدث عبر القنوات الفعالة وذلك من خلال دراسات السوق والتوجهات والممكنات التي نقوم بتوفيرها.</p>
-                <!-- <div class="d-flex gap-4 mt-3">
-                  <a href="#" class="btn-primary-custom" data-cursor-text="قراءة المزيد"><i class="fa-solid fa-arrow-right-long"></i></a>
-                </div> -->
-              </div>
-              <div class="solution-card-img"><img src="images/solution4.jpg" class="object-fit-cover" alt=""></div>
-            </div>
-          </div>
-      
-          <div class="c-card">
-            <div class="solution-card-content">
-              <div class="solution-card-txt">
-                <h3>أنظمة الإضاءة</h3>
-                <div class="accent-line"></div>
-                <p class="solution-desc">نقدم خدماتنا التسويقية الممكنة بأفكار إبداعية في مجال إدارة الأحداث ووسائل الإعلام الرقمي، حيث ننفذ الاستراتيجية الملائمة للحدث عبر القنوات الفعالة وذلك من خلال دراسات السوق والتوجهات والممكنات التي نقوم بتوفيرها.</p>
-                <!-- <div class="d-flex gap-4 mt-3">
-                  <a href="#" class="btn-primary-custom" data-cursor-text="قراءة المزيد"><i class="fa-solid fa-arrow-right-long"></i></a>
-                </div> -->
-              </div>
-              <div class="solution-card-img"><img src="images/solution5.jpg" class="object-fit-cover" alt=""></div>
+              <div class="solution-card-img"><img src="images/solution3.jpg" class="object-fit-cover" alt="الممكنات التسويقية"></div>
             </div>
           </div>
       
@@ -350,172 +519,427 @@
         </div>
       </div>
     </div>
+
     <div class="cta-banner mt-5 text-center text-lg-start wow fadeInUp">
       <div class="row align-items-center">
         <div class="col-lg-8 mb-4 mb-lg-0">
-          <h3 class="display-6 fw-bold text-white mb-2">تحتاج مساعدة في اختيار الحل المناسب؟</h3>
-          <p class="mb-0 text-white">تواصل مع خبرائنا اليوم للحصول على استشارة مجانية ومخصصة لاحتياجاتك.</p>
+          <h3 class="display-6 fw-bold text-white mb-2">تحتاج مساعدة في اختيار الممكنات المناسبة؟</h3>
+          <p class="mb-0 text-white">تواصل مع خبرائنا اليوم للحصول على استشارة مجانية ودراسة فنية مخصصة لاحتياجاتك.</p>
         </div>
         <div class="col-lg-4 text-lg-end">
-          <a href="#" class="btn-primary-custom"><i class="fa-solid fa-phone me-2"></i> تواصل معنا</a>
+          <a href="#" class="btn-primary-custom" data-cursor-text="استشارة"><i class="fa-solid fa-headset me-2"></i> <span>استشارة مجانية</span></a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- ══════════ STATS ══════════ -->
-<section class="stats">
+<!-- ══════════ 7. لماذا ستاند اكسبو (جديد - 4 نقاط وترخيص) ══════════ -->
+<section class="why-us-section" id="why-us">
   <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.0s">
-        <div class="stat-item">
-          <div class="stat-number"><span class="counter" data-target="300">0</span><span class="plus">+</span></div>
-          <div class="stat-label">ألف مشارك</div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="stat-item">
-          <div class="stat-number"><span class="counter" data-target="45">0</span><span class="plus">+</span></div>
-          <div class="stat-label">عميل</div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="stat-item">
-          <div class="stat-number"><span class="counter" data-target="25">0</span><span class="plus">+</span></div>
-          <div class="stat-label">فعالية</div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="stat-item">
-          <div class="stat-number"><span class="counter" data-target="250">0</span><span class="plus">+</span></div>
-          <div class="stat-label">جناح</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ══════════ NEWS & EVENTS ══════════ -->
-<section class="recent-events" id="news">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 text-start wow fadeInUp">
-        <span class="section-label">أعمالنا القريبة</span>
-        <h2 class="section-title text-splitted">آخر الأحداث</h2>
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <span class="section-label">مزايا الشراكة معنا</span>
+        <h2 class="section-title text-splitted">لماذا ستاند اكسبو</h2>
         <div class="accent-line"></div>
       </div>
-      <div class="col-lg-6 text-end wow fadeInUp">
-          <div class="d-flex justify-content-end mt-4 wow fadeInUp" data-wow-delay="0.4s">
-            <a href="news-blogs.html" class="btn-outline-custom my-3">شاهد جميع الأحداث</a>
-          </div>
+      <div class="col-lg-6">
+        <p class="section-sub">نقدم قيمة حقيقية وفارقاً ملموساً لعملائنا من خلال التكامل بين قدرات الورش والتنظيم، مما يضمن أداءً لا يضاهى وموثوقية مطلقة.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- النقطة 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="why-card wow fadeInUp" data-wow-delay="0.0s">
+          <div class="why-icon"><i class="fa-solid fa-industry"></i></div>
+          <h4 class="why-card-title">تصنيع داخلي يعني جودة وسرعة وتحكم في التكلفة</h4>
+          <p class="why-card-desc">امتلاكنا لورش ومصانع متكاملة يضمن دقة التفاصيل، تسليم أسرع دون تأخير، وتحكماً كاملاً بالميزانية بدون هوامش الوسطاء.</p>
+        </div>
       </div>
 
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="event-card row g-3 wow fadeInUp">
-          <div class="col-lg-2"><div class="event-img"><img src="images/event1.jpg" class="w-100" alt=""></div></div>
-          <div class="col-lg-2 col-md-3"><div class="event-date">
-            <span>24</span>
-            <span>مارس</span>
-          </div></div>
-          <div class="col-lg-6 col-md-5"><div class="event-content">
-            <h3>مهرجان الرياض للتسوق</h3>
-            <div class="event-info">
-              <div><i class="fa-solid fa-location-dot"></i> الرياض، المملكة العربية السعودية</div>
-              <div><i class="fa-regular fa-calendar-days"></i> 24 - 26 أكتوبر 2026</div>
-            </div>
-          </div></div>
-          <div class="col-lg-2 col-md-4"><div class="event-btn">
-            <a href="#" class="btn-primary-custom"><i class="fa-solid fa-arrow-right-long"></i> تفاصيل أكثر</a>
-          </div></div>
+      <!-- النقطة 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="why-card wow fadeInUp" data-wow-delay="0.1s">
+          <div class="why-icon"><i class="fa-solid fa-arrows-to-circle"></i></div>
+          <h4 class="why-card-title">مسؤولية واحدة من التصميم إلى التشغيل</h4>
+          <p class="why-card-desc">شريك موحد يتولى كل خطوة: التصميم ثلاثي الأبعاد، التصنيع، النقل، التركيب وإدارة التشغيل الميداني لراحة بال تامة.</p>
         </div>
       </div>
-      <div class="col-12">
-        <div class="event-card row g-3 wow fadeInUp">
-          <div class="col-lg-2"><div class="event-img"><img src="images/event2.jpg" class="w-100" alt=""></div></div>
-          <div class="col-lg-2 col-md-3"><div class="event-date">
-            <span>24</span>
-            <span>مارس</span>
-          </div></div>
-          <div class="col-lg-6 col-md-5"><div class="event-content">
-            <h3>مهرجان الرياض للتسوق</h3>
-            <div class="event-info">
-              <div><i class="fa-solid fa-location-dot"></i> الرياض، المملكة العربية السعودية</div>
-              <div><i class="fa-regular fa-calendar-days"></i> 24 - 26 أكتوبر 2026</div>
-            </div>
-          </div></div>
-          <div class="col-lg-2 col-md-4"><div class="event-btn">
-            <a href="#" class="btn-primary-custom"><i class="fa-solid fa-arrow-right-long"></i> تفاصيل أكثر</a>
-          </div></div>
+
+      <!-- النقطة 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="why-card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="why-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+          <h4 class="why-card-title">فريق وطني بخبرة مع الجهات الحكومية</h4>
+          <p class="why-card-desc">كوادر وطنية تفهم بدقة البروتوكولات الرسمية واشتراطات الجهات السيادية والحكومية، وتدير المشاريع باحترافية مشهودة.</p>
         </div>
       </div>
-      <div class="col-12">
-        <div class="event-card row g-3 wow fadeInUp">
-          <div class="col-lg-2"><div class="event-img"><img src="images/event3.jpg" class="w-100" alt=""></div></div>
-          <div class="col-lg-2 col-md-3"><div class="event-date">
-            <span>24</span>
-            <span>مارس</span>
-          </div></div>
-          <div class="col-lg-6 col-md-5"><div class="event-content">
-            <h3>مهرجان الرياض للتسوق</h3>
-            <div class="event-info">
-              <div><i class="fa-solid fa-location-dot"></i> الرياض، المملكة العربية السعودية</div>
-              <div><i class="fa-regular fa-calendar-days"></i> 24 - 26 أكتوبر 2026</div>
-            </div>
-          </div></div>
-          <div class="col-lg-2 col-md-4"><div class="event-btn">
-            <a href="#" class="btn-primary-custom"><i class="fa-solid fa-arrow-right-long"></i> تفاصيل أكثر</a>
-          </div></div>
+
+      <!-- النقطة 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="why-card why-license-box wow fadeInUp" data-wow-delay="0.3s">
+          <div class="why-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h4 class="why-card-title">ترخيص معتمد واشتراطات موثوقة</h4>
+          <p class="why-card-desc">مرخصون ومعتمدون رسمياً مع الالتزام التام بكافة معايير السلامة والجودة والاعتماد الصادرة للفعاليات في المملكة.</p>
+          <div class="why-license-badge"><i class="fa-solid fa-check-circle me-1"></i> ترخيص الهيئة العامة للمعارض والمؤتمرات</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ══════════ 8. أعمال مختارة (جديد - مشاريع بنتائج رقمية وزر دراسة الحالة وكل الأعمال) ══════════ -->
+<section class="featured-works" id="portfolio">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <span class="section-label">سجل الإنجازات</span>
+        <h2 class="section-title text-splitted">أعمال مختارة</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="col-lg-6 text-lg-end">
+        <p class="section-sub mb-3">مشاريع استثنائية صُنعت في ورشنا وأديرت بفريقنا لأهم الفعاليات في المملكة.</p>
+        <a href="#portfolio" class="btn-outline-custom"><i class="fa-solid fa-layer-group me-2"></i> <span>كل الأعمال</span></a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="work-card wow fadeInUp" data-wow-delay="0.0s">
+          <div class="work-img-wrap">
+            <a href="#"><img src="images/event1.jpg" alt="جناح وزارة الطاقة"></a>
+            <span class="work-entity-badge">وزارة الطاقة</span>
+          </div>
+          <div class="work-body">
+            <div>
+              <a href="#"><h3 class="work-title">جناح الطاقة المتجددة - مؤتمر البترول العالمي</h3></a>
+              <div class="work-metric-box">
+                <p class="work-metric-text"><i class="fa-solid fa-stopwatch"></i> جناح 300 م² صُنّع وركّب في 10 أيام</p>
+              </div>
+            </div>
+            <a href="#" class="btn-case-study">دراسة الحالة <i class="fa-solid fa-arrow-left"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="work-card wow fadeInUp" data-wow-delay="0.1s">
+          <div class="work-img-wrap">
+            <a href="#"><img src="images/event2.jpg" alt="مسرح القمة العالمية للذكاء الاصطناعي"></a>
+            <span class="work-entity-badge">سدايا (SDAIA)</span>
+          </div>
+          <div class="work-body">
+            <div>
+              <a href="#"><h3 class="work-title">المسرح التفاعلي الذكي - قمة الذكاء الاصطناعي</h3></a>
+              <div class="work-metric-box">
+                <p class="work-metric-text"><i class="fa-solid fa-stopwatch"></i> مسرح تفاعلي 450 م² نُفّذ في 7 أيام</p>
+              </div>
+            </div>
+            <a href="#" class="btn-case-study">دراسة الحالة <i class="fa-solid fa-arrow-left"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="work-card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="work-img-wrap">
+            <a href="#"><img src="images/event3.jpg" alt="منصة سيتي سكيب الدولي"></a>
+            <span class="work-entity-badge">صندوق الاستثمارات العامة</span>
+          </div>
+          <div class="work-body">
+            <div>
+              <a href="#"><h3 class="work-title">جناح التطوير العمراني - معرض سيتي سكيب</h3></a>
+              <div class="work-metric-box">
+                <p class="work-metric-text"><i class="fa-solid fa-stopwatch"></i> جناح 600 م² طابقين سُلّم قبل الموعد بـ 48 ساعة</p>
+              </div>
+            </div>
+            <a href="#" class="btn-case-study">دراسة الحالة <i class="fa-solid fa-arrow-left"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 pt-3 wow fadeInUp" data-wow-delay="0.3s">
+      <a href="#" class="btn-primary-custom"><i class="fa-solid fa-arrow-right-long"></i> <span>كل الأعمال</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 9. عملاؤنا (جهات وثقت بنا بشريط متحرك) ══════════ -->
+<section class="clients-section" id="clients">
+  <div class="container">
+    <div class="row align-items-center mb-4">
+      <div class="col-lg-6">
+        <span class="section-label">شركاء النجاح</span>
+        <h2 class="section-title text-splitted">جهات وثقت بنا</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="col-lg-6">
+        <p class="section-sub">نفخر بثقة نخبة من الوزارات والهيئات الحكومية وكبرى الشركات الوطنية والعالمية في مشاريعها الاستراتيجية.</p>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="clients-carousel owl-carousel owl-theme wow fadeInDown">
+          <div class="client-box"><img src="images/cl1.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl2.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl3.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl4.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl5.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl6.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl7.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl8.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl9.png" alt="جهة موثوقة"></div>
+          <div class="client-box"><img src="images/cl10.png" alt="جهة موثوقة"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 10. آراء العملاء (جديد - اقتباسات بالاسم والمنصب والجهة) ══════════ -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <span class="section-label">ماذا يقولون عنا</span>
+        <h2 class="section-title text-splitted">آراء العملاء</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="col-lg-6">
+        <p class="section-sub">اعتزازنا الحقيقي ينبع من انطباعات شركائنا وثنائهم على دقة التصنيع واحترافية التنظيم الميداني.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Quote 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card wow fadeInUp" data-wow-delay="0.0s">
+          <div>
+            <div class="quote-icon-top"><i class="fa-solid fa-quote-right"></i></div>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"التزام لا يضاهى في المواعيد وجودة التصنيع، كان جناحنا حديث المؤتمر بفضل حرفية ورش ستاند اكسبو وتفاني فريقهم الميداني."</p>
+          </div>
+          <div class="testimonial-author-box">
+            <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <h5 class="author-name">د. عبدالله الشمري</h5>
+              <p class="author-meta">مدير عام التواصل المؤسسي — هيئة حكومية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card wow fadeInUp" data-wow-delay="0.1s">
+          <div>
+            <div class="quote-icon-top"><i class="fa-solid fa-quote-right"></i></div>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"التحكم الكامل في التصنيع والتشغيل من جهة واحدة وفّر علينا الوقت والجهد، وضمن مخرجات متناسقة فاقت كل التوقعات."</p>
+          </div>
+          <div class="testimonial-author-box">
+            <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <h5 class="author-name">م. سارة العتيبي</h5>
+              <p class="author-meta">رئيسة قطاع الفعاليات — شركة وطنية كبرى</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card wow fadeInUp" data-wow-delay="0.2s">
+          <div>
+            <div class="quote-icon-top"><i class="fa-solid fa-quote-right"></i></div>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"سرعة استجابة واحترافية عالية في إدارة الفعالية من التخطيط وحتى آخر زائر. شريك يعتمد عليه في أكبر المحافل."</p>
+          </div>
+          <div class="testimonial-author-box">
+            <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <h5 class="author-name">أ. فيصل الدوسري</h5>
+              <p class="author-meta">المشرف العام على المعارض — مجموعة استثمارية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 11. انضم إلينا (جديد - شريط مزدوج: فريقنا ومورد معتمد) ══════════ -->
+<section class="join-us-section" id="join-us">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <span class="section-label">آفاق التعاون والنمو</span>
+        <h2 class="section-title text-splitted">انضم إلينا</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="col-lg-6">
+        <p class="section-sub">نفتح أبوابنا للمواهب الوطنية الطموحة وللموردين المحترفين للمشاركة في مسيرة التميز وبناء فعاليات المستقبل.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- بطاقة 1: انضم لفريقنا -->
+      <div class="col-lg-6">
+        <div class="join-card wow fadeInUp" data-wow-delay="0.0s">
+          <div>
+            <div class="join-card-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h3 class="join-card-title">انضم لفريقنا</h3>
+            <p class="join-card-desc">نبحث دوماً عن الكفاءات والمواهب الوطنية في مجالات التصميم ثلاثي الأبعاد، إدارة المشاريع، الهندسة المعمارية، وفنون التصنيع الحرفي لتصنع معنا الفارق.</p>
+          </div>
+          <div>
+            <a href="#" class="btn-outline-custom" data-cursor-text="تقديم"><i class="fa-solid fa-briefcase me-2"></i> <span>الوظائف المتاحة</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- بطاقة 2: سجّل كمورد معتمد -->
+      <div class="col-lg-6">
+        <div class="join-card wow fadeInUp" data-wow-delay="0.1s">
+          <div>
+            <div class="join-card-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3 class="join-card-title">سجّل كمورد معتمد</h3>
+            <p class="join-card-desc">إذا كنت تقدم خدمات تقنية أو لوجستية أو مواد تصنيع تطابق أعلى مواصفات الجودة، يسعدنا انضمامك لشبكة موردينا المعتمدين في مختلف مناطق المملكة.</p>
+          </div>
+          <div>
+            <a href="#" class="btn-primary-custom" data-cursor-text="تسجيل">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <span>سجّل كمورد</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 12. شريط الدعوة الختامي (جديد - نموذج مختصر + واتساب) ══════════ -->
+<section class="final-cta-section" id="final-cta">
+  <div class="container">
+    <div class="cta-box-wrapper wow fadeInUp">
+      <div class="row align-items-center mb-4">
+        <div class="col-lg-8">
+          <span class="section-label">تواصل سريع</span>
+          <h2 class="section-title text-splitted text-white">لديك معرض أو فعالية قادمة؟</h2>
+          <p class="section-sub text-white fs-5 mt-2">أرسل لنا فكرتك ونرسل لك تصوراً مبدئياً وعرض سعر خلال 48 ساعة.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="https://wa.me/966500000000" target="_blank" class="btn-whatsapp-custom" data-cursor-text="واتساب">
+            <i class="fa-brands fa-whatsapp fs-5"></i>
+            <span>تواصل عبر واتساب</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="accent-line mb-4"></div>
+
+      <!-- نموذج مختصر -->
+      <form class="mt-4" onsubmit="event.preventDefault(); alert('شكراً لتواصلك، سيتم الرد بعرض السعر والتصور المبدئي خلال 48 ساعة.');">
+        <div class="row g-3">
+          <div class="col-md-3 col-sm-6">
+            <div class="form-floating-custom">
+              <label><i class="fa-solid fa-user me-1"></i> الاسم الكامل</label>
+              <input type="text" class="form-input-custom" placeholder="مثال: محمد السعيد" required>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="form-floating-custom">
+              <label><i class="fa-solid fa-phone me-1"></i> رقم الجوال</label>
+              <input type="tel" class="form-input-custom" placeholder="05XXXXXXXX" dir="ltr" required>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="form-floating-custom">
+              <label><i class="fa-solid fa-building me-1"></i> اسم الجهة / الشركة</label>
+              <input type="text" class="form-input-custom" placeholder="اسم الجهة أو الشركة" required>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="form-floating-custom">
+              <label><i class="fa-solid fa-list-check me-1"></i> نوع المشروع</label>
+              <select class="form-input-custom form-select-custom" required>
+                <option value="" disabled selected>اختر نوع المشروع</option>
+                <option value="stand">تصنيع جناح معرض</option>
+                <option value="event">تنظيم وإدارة فعالية</option>
+                <option value="stage">تصنيع مسارح وديكورات</option>
+                <option value="conference">تنظيم مؤتمر أو ندوة</option>
+                <option value="other">أخرى</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 text-center text-md-start mt-4">
+            <button type="submit" class="btn-primary-custom" data-cursor-text="إرسال">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <span>أرسل الطلب</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
 <!-- ══════════ FOOTER ══════════ -->
 <footer>
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="footer-brand"><img src="images/logo.png" alt=""></div>
-        <p class="footer-desc">من قلب المملكة، انطلقت رحلتنا نحو الرؤى إلى واقع ملموس في عالم الفعاليات والمؤتمرات. بفضل فريقنا الوطني الشغوف وخبراتنا العميقة في التعامل مع الجهات السيادية والحكومية، نصمم تجارب لا تُنسى تتجاوز التوقعات.</p>
-        <!-- <a href="#">Learn More</a> -->
+        <div class="footer-brand"><img src="images/logo.png" alt="StandExpo"></div>
+        <p class="footer-desc">من قلب المملكة، انطلقت رحلتنا لتحويل الرؤى إلى واقع ملموس في عالم الفعاليات والمؤتمرات. بفضل فريقنا الوطني الشغوف وخبراتنا العميقة، نصمم تجارب لا تُنسى تتجاوز التوقعات.</p>
       </div>
       <div class="col-lg-2 col-md-6 col-sm-6">
         <div class="footer-title">روابط سريعة</div>
         <ul class="footer-links">
-          <li><a href="#"><i class="fa fa-chevron-right"></i> الرئيسية</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i> من نحن</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i> أعمالنا</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i> عملاؤنا</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i> الأحداث</a></li>
+          <li><a href="#home"><i class="fa fa-chevron-right"></i> الرئيسية</a></li>
+          <li><a href="#about"><i class="fa fa-chevron-right"></i> من نحن</a></li>
+          <li><a href="#portfolio"><i class="fa fa-chevron-right"></i> أعمالنا</a></li>
+          <li><a href="#clients"><i class="fa fa-chevron-right"></i> عملاؤنا</a></li>
+          <li><a href="#why-us"><i class="fa fa-chevron-right"></i> لماذا ستاند اكسبو</a></li>
           <li><a href="#"><i class="fa fa-chevron-right"></i> تواصل معنا</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="footer-title">خدماتنا</div>
         <ul class="footer-links">
-          <li><a href="#"><i class="fa fa-chevron-right"></i> إدارة الفعاليات</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i> تنظيم المعارض</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i> تنظيم المؤتمرات</a></li>
-          <li><a href="#"><i class="fa fa-chevron-right"></i> تنظيم الندوات</a></li>
+          <li><a href="#services-manufacturing"><i class="fa fa-chevron-right"></i> تصنيع أجنحة المعارض</a></li>
+          <li><a href="#services-manufacturing"><i class="fa fa-chevron-right"></i> تصنيع الديكورات والمسارح</a></li>
+          <li><a href="#services-management"><i class="fa fa-chevron-right"></i> إدارة الفعاليات والمهرجانات</a></li>
+          <li><a href="#services-management"><i class="fa fa-chevron-right"></i> تنظيم المؤتمرات والندوات</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="footer-title">معلومات الاتصال</div>
         <div class="footer-contact-item">
           <i class="fa fa-map-marker"></i>
-          <span>طريق عثمان بن عفان - حي التعاون - الرياض - السعودية</span>
+          <span>طريق عثمان بن عفان - حي التعاون - الرياض - المملكة العربية السعودية</span>
         </div>
-        <!-- <div class="footer-contact-item">
-          <i class="fa fa-phone"></i>
-          <span><a href="tel:+966000000000">+966 00 000 0000</a></span>
-        </div> -->
         <div class="footer-contact-item">
           <i class="fa fa-envelope"></i>
           <span><a href="mailto:info@standexpo.com.sa">info@standexpo.com.sa</a></span>
@@ -526,7 +950,6 @@
           <a href="#" class="social-btn" target="_blank"><i class="fab fa-youtube"></i></a>
           <a href="#" class="social-btn" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-
       </div>
     </div>
     <div class="footer-bottom">
@@ -535,12 +958,6 @@
     </div>
   </div>
 </footer>
-
-
-
-
-
-
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -551,12 +968,11 @@
 <script src="include/js/jquery.hover3d.js"></script>
 <script src="include/js/scripts.js"></script>
 
-  <!-- Smooth Scrolling -->
+<!-- Smooth Scrolling -->
 <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
 <script>
   // Initialize Lenis
   const lenis = new Lenis();
-  // Use requestAnimationFrame to continuously update the scroll
   function raf(time) {
     lenis.raf(time);
     requestAnimationFrame(raf);
@@ -565,7 +981,6 @@
 </script>
 
 <script>
-
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -587,9 +1002,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
 </script>
-
 
 </body>
 </html>
